@@ -1,0 +1,6 @@
+<launch>
+
+  <include file="$(find real_leo)/launch/twist_mux.launch" />
+  <include file="$(find real_leo)/launch/move_base.launch" />
+
+</launch>
