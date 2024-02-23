@@ -11,10 +11,9 @@ sudo apt install ros-humble-leo-viz
 ## 2. setup rplidar
 ```bash
 cd ~/ros2_ws
-source ./install/setup.bash
+source install/setup.bash
 sudo chmod 777 /dev/ttyUSB0
-cd src/rplidar_ros/
-source scripts/create_udev_rules.sh
+source src/rplidar_ros/scripts/create_udev_rules.sh
 ```
 Now, you can launch the lidar node by
 ```bash
