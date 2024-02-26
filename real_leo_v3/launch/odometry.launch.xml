@@ -1,0 +1,23 @@
+<launch>
+  <arg name="three_d" default="false" />
+
+  <node if="$(var three_d)"
+    name="imu_filter_node"
+    pkg="imu_filter_madgwick"
+    exec="imu_filter_node">
+    <rosparam value="$(command 'load')"
+      file="$(find-pkg-share real_leo)/config/imu_filter_node.yaml" />
+  </node>
+
+  <node name="ekf_localization_node"
+    pkg="robot_localization"
+    exec="ekf_localization_node">
+    <rosparam unless="$(var three_d)"
+      value="$(command 'load')"
+      file="$(find-pkg-share real_leo)/config/ekf_localization_node/ekf_2d.yaml" />
+    <rosparam if="$(var three_d)"
+      value="$(command 'load')"
+      file="$(find-pkg-share real_leo)/config/ekf_localization_node/ekf_3d.yaml" />
+  </node>
+
+</launch>

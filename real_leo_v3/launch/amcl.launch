@@ -1,0 +1,14 @@
+<launch>
+  <arg name="map_file" />
+
+  <node name="map_server"
+    pkg="map_server"
+    exec="map_server"
+    args="$(var map_file)" />
+
+  <node name="amcl"
+    pkg="amcl"
+    exec="amcl">
+    <rosparam value="$(command 'load')" file="$(find-pkg-share real_leo)/config/amcl.yaml" />
+  </node>
+</launch>
