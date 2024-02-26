@@ -1,0 +1,6 @@
+<launch>
+<!-- https://docs.ros.org/en/rolling/How-To-Guides/Migrating-from-ROS1/Migrating-Launch-Files.html -->
+  <include file="$(find-pkg-share real_leo)/launch/twist_mux.launch.xml" />
+  <include file="$(find-pkg-share real_leo)/launch/move_base.launch.xml" />
+
+</launch>

@@ -1,0 +1,8 @@
+<launch>
+  <node name="gmapping"
+    pkg="gmapping"
+    exec="slam_gmapping">
+    <rosparam value="$(command 'load')"
+      file="$(find-pkg-share real_leo)/config/slam_gmapping.yaml" />
+  </node>
+</launch>

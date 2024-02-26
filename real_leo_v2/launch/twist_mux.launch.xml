@@ -1,0 +1,14 @@
+<launch>
+  <arg name="cmd_vel_out" default="cmd_vel" />
+
+  <node name="twist_mux"
+    pkg="twist_mux"
+    exec="twist_mux">
+    <remap from="cmd_vel_out" to="$(var cmd_vel_out)" />
+    <rosparam value="$(command 'load')"
+      file="$(find-pkg-share real_leo)/config/twist_mux/topics.yaml" />
+    <rosparam value="$(command 'load')"
+      file="$(find-pkg-share real_leo)/config/twist_mux/locks.yaml" />
+  </node>
+
+</launch>
