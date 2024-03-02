@@ -6,6 +6,7 @@ sudo apt install ros-humble-nav2-bringup
 sudo apt install ros-humble-slam-toolbox
 sudo apt install ros-humble-rplidar-ros
 sudo apt install ros-humble-leo-viz
+sudo apt install ros-humble-ros-gz
 ```
 
 ## 2. setup rplidar
