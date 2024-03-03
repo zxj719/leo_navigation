@@ -7,6 +7,7 @@ sudo apt install ros-humble-slam-toolbox
 sudo apt install ros-humble-rplidar-ros
 sudo apt install ros-humble-leo-viz
 sudo apt install ros-humble-ros-gz
+sudo apt install xterm
 ```
 
 ## 2. setup rplidar
