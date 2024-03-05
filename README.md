@@ -1,5 +1,12 @@
+## prequisition
+```bash
+sudo apt install ros-humble-navigation2
+sudo apt install ros-humble-nav2-bringup
+sudo apt install ros-humble-slam-toolbox
+sudo apt install ros-humble-rplidar-ros
+```
 ## Following steps should be performed in raspberry pi(remote connect state).
-Get familiar with git in my another repo([leo_workflow](https://github.com/zxj719/leo_workflow)), then download prepared pkg under src.
+Get familiar with git in my another repo([leo_workflow](https://github.com/zxj719/leo_workflow)), then download prepared pkg.
 
 ```bash
 git clone -b teleop_leo https://github.com/zxj719/leo_navigation.git
