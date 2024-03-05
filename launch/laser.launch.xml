@@ -1,0 +1,10 @@
+<launch>
+  <node name="rplidar_node" pkg="rplidar_ros" exec="rplidar_node" output="screen">
+    <param name="channel_type" value="serial"/>
+    <param name="serial_port" value="/dev/ttyUSB0"/>
+    <param name="serial_baudrate" value="256000"/>
+    <param name="frame_id" value="laser_frame"/>
+    <param name="inverted" value="false"/>
+    <param name="angle_compensate" value="true"/>
+  </node>
+</launch>
