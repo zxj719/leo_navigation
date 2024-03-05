@@ -12,7 +12,7 @@ def generate_launch_description():
     pkg_name = 'teleop_leo'
 
     # LOAD PARAMETERS FROM YAML FILES
-    config_bt_nav = PathJoinSubstitution([get_package_share_directory(pkg_name), 'config', 'bt_nav.yaml'])
+    joy_config = PathJoinSubstitution([get_package_share_directory(pkg_name), 'config', 'joy_config.yaml'])
 
     launch_node_joy = Node(
         package="joy",
@@ -30,7 +30,7 @@ def generate_launch_description():
         executable="teleop_node",
         name="joy_teleop_node",
         remappings=[("/cmd_vel", "cmd_vel")],
-        parameters=[config_bt_nav],
+        parameters=[joy_config],
     )
 
     ld.add_action(launch_node_joy)
