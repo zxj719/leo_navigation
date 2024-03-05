@@ -10,7 +10,6 @@ rename the pkg: teleop_leo, build and launch the joystick one, more detailed [in
 In /etc/ros/robot.launch.xml:
 ```xml
 <include file="/etc/ros/laser.launch.xml"/>
-<include file="$(find-pkg-share my_leo)/launch/rviz_leo.launch.py"/>
 ```
 
 In /etc/ros/urdf/robot.urdf.xacro:
