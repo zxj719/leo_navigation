@@ -8,6 +8,7 @@ sudo apt install ros-humble-rplidar-ros
 sudo apt install ros-humble-leo-viz
 sudo apt install ros-humble-ros-gz
 sudo apt install xterm
+sudo apt install qtbase5-dev libqt5svg5-dev libzmq3-dev libdw-dev
 ```
 
 ## 2. setup rplidar
