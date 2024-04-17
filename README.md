@@ -25,7 +25,7 @@ Now, you can launch the lidar node by
 ```bash
 ros2 launch rplidar_ros view_rplidar_a2m12_launch.py
 ```
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
@@ -707,3 +707,4 @@ ros2 launch rplidar_ros view_rplidar_a2m12_launch.py
   </xacro:macro>
 
 </robot>
+```
